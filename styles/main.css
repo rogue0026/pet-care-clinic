@@ -194,3 +194,28 @@ body {
     font-size: 32px;
     border-bottom: 3px solid saddlebrown;
 }
+
+.contacts-container {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-item-icon {
+    width: 40px;
+    height: 40px;
+}
