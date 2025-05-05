@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #d9c4ac;
+    background-color: #D8BFAA;
     margin: 0;
     padding-left: 250px;
     padding-right: 250px;
@@ -12,6 +12,7 @@ body {
 }
 
 .site-header {
+    background-color: #F9F7F4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,16 +31,24 @@ body {
 }
 
 .site-logo-title h1 {
-    border-bottom: 1px solid black;
+    color: #4B3F30;
+    border-bottom: 1px solid #B3A580;
     margin: 0;
     padding: 0;
     font-size: 36px;
 }
 
 .site-logo-title p {
+    text-align: center;
+    color: #837A6B;
     margin: 0;
     padding: 0;
     font-size: 20px;
+}
+
+.site-logo-image {
+    width: 70px;
+    height: 70px;
 }
 
 .site-navigation {
@@ -49,14 +58,15 @@ body {
 
 .site-navigation__link {
     text-decoration: none;
-    color: black;
+    color: #C97C5D;
 }
 
 .site-header-mobile {
-
+    color: #4B3F30;
 }
 
 .hero {
+    background-color: #F9F7F4;
     padding: 20px;
     /*border: 1px solid black;*/
     display: flex;
@@ -74,12 +84,14 @@ body {
 }
 
 .hero-title {
+    color: #4B3F30;
     margin: 0;
     padding: 0;
     font-size: 90px;
 }
 
 .hero-subtitle {
+    color: #837A6B;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -89,7 +101,12 @@ body {
     /*border: 1px solid crimson;*/
 }
 
+.services {
+    background-color: #F9F7F4;
+}
+
 .services-title {
+    color: #837A6B;
     margin: 0;
     padding: 10px;
     font-size: 32px;
@@ -107,13 +124,18 @@ body {
 }
 
 .services__item {
-    background-color: gray;
+    background-color: #B3A580;
     border: 1px solid white;
     border-radius: 20px;
     padding: 20px;
 }
 
+.experts {
+    background-color: #F9F7F4;
+}
+
 .experts__title {
+    color: #B3A580;
     margin: 0;
     padding: 10px;
     font-size: 32px;
@@ -149,9 +171,12 @@ body {
     color: white;
 }
 
-.reasons {}
+.reasons {
+    background-color: #F9F7F4;
+}
 
 .reasons-title {
+    color: #B3A580;
     margin: 0;
     padding: 10px;
     font-size: 32px;
@@ -188,6 +213,13 @@ body {
     font-size: 18px;
 }
 
+.contacts {
+    color: #B3A580;
+    background-color: #F9F7F4;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
 .contacts-title {
     margin: 0;
     padding: 10px;
@@ -206,7 +238,7 @@ body {
 .contacts-info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
 }
 
 .contact-item {
@@ -218,4 +250,28 @@ body {
 .contact-item-icon {
     width: 40px;
     height: 40px;
+}
+
+.phone-text {
+    color: #B3A580;
+    text-decoration: none;
+}
+
+.site-footer {
+    background-color: #F9F7F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-all-rigths {
+    color: #837A6B;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 50px;
 }
