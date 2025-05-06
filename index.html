@@ -1,180 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <title>ЗооДомик</title>
+        <link rel="icon" href="images/logo.svg">
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="icon" href="img/logo.svg">
         <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
     <body>
-        <header class="site-header">
-            <div class="site-logo-container">
-                <div class="site-logo-title">
-                    <h1>ЗООДОМИК</h1>
-                    <p>Ветеринарная клиника</p>
+        <header class="page-header">
+<!--            <div class="site-logo">-->
+                <div class="title-container">
+                    <h1 class="site-logo__main-title">ЗООДОМИК</h1>
+                    <p class="site-logo__sub-title">Ветеринарная клиника</p>
                 </div>
-                <img class="site-logo-image" src="img/logo.svg" alt="Логотип сайта">
-            </div>
-            <nav class="site-navigation">
-                <a class="site-navigation__link" href="#our-services">Услуги</a>
-                <a class="site-navigation__link" href="#our-experts">Специалисты</a>
-                <a class="site-navigation__link" href="#our-contacts">Контакты</a>
+<!--                <img class="site-logo__image" src="images/logo.svg" width="32" height="32" alt="Логотип сайта">-->
+<!--            </div>-->
+            <nav class="page-navigation">
+                <a class="page-navigation__link" href="#our-services">Услуги</a>
+                <a class="page-navigation__link" href="#our-experts">Специалисты</a>
+                <a class="page-navigation__link" href="#our-contacts">Контакты</a>
             </nav>
-            <p class="site-header-mobile">+7 (926) 715-97-99</p>
+            <a href="tel:79267159799" class="page-header__mobile-number">+7 (926) 715-97-99</a>
         </header>
-
-        <section class="hero">
+        <section class="hero-block">
             <div class="hero-title-wrapper">
-                <p class="hero-title">Забота о вашем питомце — <br>наша профессия<br> и призвание</p>
-                <p class="hero-subtitle">Ветеринарная клиника «Зоодомик» — место, где животных любят, понимают и лечат с душой. Мы всегда рядом, когда ваш хвостатый друг нуждается в помощи.</p>
+                <p class="hero-block__title">Забота о вашем питомце — <br>наша профессия<br> и призвание</p>
+                <p class="hero-block__sub-title">Ветеринарная клиника «Зоодомик» — место, где животных любят, понимают и лечат с душой. Мы всегда рядом, когда ваш хвостатый друг нуждается в помощи.</p>
             </div>
-            <img class="hero-image" src="img/hero-animals.png" alt="Милые животные">
+            <img class="hero-block__banner" src="images/hero-animals.png" width="500" height="300" alt="Милые животные">
         </section>
-        <section class="services">
-            <p id="our-services" class="services-title">Услуги ветклиники</p>
-            <div class="services-container">
-                <div class="services__item">
-                    <h2>Процедурный кабинет</h2>
-                    <p>Инъекции, инфузии, санация швов, санация мочевого пузыря, стрижка когтей, стрижка колтунов, гигиенические процедуры</p>
-                </div>
-                <div class="services__item">
-                    <h2>Лабораторные анализы</h2>
-                    <p>Диагностика и профилактика заболеваний животных</p>
-                </div>
-                <div class="services__item">
-                    <h2>УЗИ и рентген</h2>
-                    <p>Визуальная диагностика внутренних органов пациента с использованием современного оборудования</p>
-                </div>
-                <div class="services__item">
-                    <h2>Чипирование</h2>
-                    <p>Легкий в применении, безболезненный, надежный и безопасный метод идентификации животного на протяжении всей его жизни</p>
-                </div>
-                <div class="services__item">
-                    <h2>Кастрация и стерилизация</h2>
-                    <p>Эффективный контроль репродуктивной функции</p>
-                </div>
-                <div class="services__item">
-                    <h2>Вакцинация</h2>
-                    <p>Самое распространенное и эффективное средство профилактики инфекционных болезней животных</p>
-                </div>
-            </div>
+        <section class="services-block">
+            <h2 id="our-services" class="section-title">Услуги</h2>
+            <ul class="service-list">
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Процедурный кабинет</h3>
+                    <p class="service-list__element-description">Инъекции, инфузии, санация швов, санация мочевого пузыря, стрижка когтей, стрижка колтунов, гигиенические процедуры</p>
+                </li>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Лабораторные анализы</h3>
+                    <p class="service-list__element-description">Диагностика и профилактика заболеваний животных</p>
+                </li>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">УЗИ и рентген</h3>
+                    <p class="service-list__element-description">Визуальная диагностика внутренних органов пациента с использованием современного оборудования</p>
+                </li>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Чипирование</h3>
+                    <p class="service-list__element-description">Легкий в применении, безболезненный, надежный и безопасный метод идентификации животного на протяжении всей его жизни</p>
+                </li>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Кастрация и стерилизация</h3>
+                    <p class="service-list__element-description">Эффективный контроль репродуктивной функции</p>
+                </li>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Вакцинация</h3>
+                    <p class="service-list__element-description">Самое распространенное и эффективное средство профилактики инфекционных болезней животных</p>
+                </li>
+            </ul>
         </section>
-        <section class="experts">
-            <p id="our-experts" class="experts__title">Наши специалисты</p>
-            <div class="experts-container">
-                <div class="experts__item">
-                    <img class="experts__image" src="img/vet-specialist.png" alt="">
-                    <p class="experts__name">Фамилия Имя Отчество</p>
-                </div>
-                <div class="experts__item">
-                    <img class="experts__image" src="img/vet-specialist.png" alt="">
-                    <p class="experts__name">Фамилия Имя Отчество</p>
-                </div>
-                <div class="experts__item">
-                    <img class="experts__image" src="img/vet-specialist.png" alt="">
-                    <p class="experts__name">Фамилия Имя Отчество</p>
-                </div>
-                <div class="experts__item">
-                    <img class="experts__image" src="img/vet-specialist.png" alt="">
-                    <p class="experts__name">Фамилия Имя Отчество</p>
-                </div>
-            </div>
+        <section class="experts-block">
+            <h2 id="our-experts" class="section-title">Наши специалисты</h2>
+            <ul class="experts-list">
+                <li class="experts-list__item">
+                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
+                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                </li>
+                <li class="experts-list__item">
+                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
+                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                </li>
+                <li class="experts-list__item">
+                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
+                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                </li>
+                <li class="experts-list__item">
+                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
+                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                </li>
+                <li class="experts-list__item">
+                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
+                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                </li>
+                <li class="experts-list__item">
+                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
+                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                </li>
+            </ul>
+            <a class="more-link" href="./specialists.html">Узнать подробнее</a>
         </section>
-        <section class="reasons">
-            <p class="reasons-title">Почему мы?</p>
-            <div class="reasons-container">
-                <div class="reasons__item">
-                    <img class="reasons__item-icon" src="img/cat-foot-icon.png" alt="">
-                    <div class="reasons__item-description-container">
+        <section class="reasons-block">
+            <h2 class="section-title">Почему мы?</h2>
+            <ul class="reasons-list">
+                <li class="reasons-list__item">
+                    <div class="reasons-list__item-wrapper">
+                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
                         <p class="reasons__item-title">Забота</p>
-                        <p class="reasons__item-description">Мы внимательны к животным и к людям. Мы искренне хотим помочь и считаем, что лечение должно проходить без лишнего стресса.</p>
                     </div>
-                </div>
-                <div class="reasons__item">
-                    <img class="reasons__item-icon" src="img/cat-foot-icon.png" alt="">
-                    <div class="reasons__item-description-container">
+                    <p class="reasons__item-description">Мы внимательны к животным и к людям. Мы искренне хотим помочь и считаем, что лечение должно проходить без лишнего стресса.</p>
+                </li>
+                <li class="reasons-list__item">
+                    <div class="reasons-list__item-wrapper">
+                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
                         <p class="reasons__item-title">Экстренная помощь</p>
-                        <p class="reasons__item-description">Имеется все необходимое оборудование, а у врачей достаточно знаний для оказания экстренной помощи.</p>
                     </div>
-                </div>
-                <div class="reasons__item">
-                    <img class="reasons__item-icon" src="img/cat-foot-icon.png" alt="">
-                    <div class="reasons__item-description-container">
+                    <p class="reasons__item-description">Имеется все необходимое оборудование, а у врачей достаточно знаний для оказания экстренной помощи.</p>
+                </li>
+                <li class="reasons-list__item">
+                    <div class="reasons-list__item-wrapper">
+                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
                         <p class="reasons__item-title">Профессионализм</p>
-                        <p class="reasons__item-description">Мы уверены в каждом своем сотруднике. Наши специалисты увлечены своей профессией и постоянно совершенствуются.</p>
                     </div>
-                </div>
-                <div class="reasons__item">
-                    <img class="reasons__item-icon" src="img/cat-foot-icon.png" alt="">
-                    <div class="reasons__item-description-container">
+                    <p class="reasons__item-description">Мы уверены в каждом своем сотруднике. Наши специалисты увлечены своей профессией и постоянно совершенствуются.</p>
+                </li>
+                <li class="reasons-list__item">
+                    <div class="reasons-list__item-wrapper">
+                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
                         <p class="reasons__item-title">Ответственность</p>
-                        <p class="reasons__item-description">Мы принимаем взвешенные решения, учитывая потребности наших пациентов. Мы готовы к сложным ситуациям.</p>
                     </div>
-                </div>
-                <div class="reasons__item">
-                    <img class="reasons__item-icon" src="img/cat-foot-icon.png" alt="">
-                    <div class="reasons__item-description-container">
+                    <p class="reasons__item-description">Мы принимаем взвешенные решения, учитывая потребности наших пациентов. Мы готовы к сложным ситуациям.</p>
+                </li>
+                <li class="reasons-list__item">
+                    <div class="reasons-list__item-wrapper">
+                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
                         <p class="reasons__item-title">Индивидуальный подход</p>
-                        <p class="reasons__item-description">Мы искренне переживаем за маленьких пациентов и беремся решать даже самые сложные случаи.</p>
                     </div>
-                </div>
-                <div class="reasons__item">
-                    <img class="reasons__item-icon" src="img/cat-foot-icon.png" alt="">
-                    <div class="reasons__item-description-container">
+                    <p class="reasons__item-description">Мы искренне переживаем за маленьких пациентов и беремся решать даже самые сложные случаи.</p>
+                </li>
+                <li class="reasons-list__item">
+                    <div class="reasons-list__item-wrapper">
+                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
                         <p class="reasons__item-title">Зоомагазин</p>
-                        <p class="reasons__item-description">Правильное питание - залог здоровья! Мы поможем подобрать питания для вашего питомца.</p>
                     </div>
-                </div>
+                    <p class="reasons__item-description">Правильное питание - залог здоровья! Мы поможем подобрать питания для вашего питомца.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="contacts-block">
+            <h2 id="our-contacts" class="section-title">Контакты</h2>
+            <div class="contacts-wrapper">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af992d8ac42e48451c735cf96e94b37713267d38e02d6e5b2772a8395447f776f&amp;width=600&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                <ul class="contacts-list">
+                    <li class="contact-list__item">
+                        <img class="contact-list__item-icon" src="images/home-address.png" width="32" height="32" alt="">
+                        <p class="contact-list__address-text">Московская область,<br>г. Ступино, ул. Горького, д. 33/25</p>
+                    </li>
+                    <li class="contact-list__item">
+                        <img class="contact-list__item-icon" src="images/work-syllabus.png" width="32" height="32" alt="">
+                        <p class="contact-list__syllabus-text">Пн-Вс, 9:00-21:00</p>
+                    </li>
+                    <li class="contact-list__item">
+                        <img class="contact-list__item-icon" src="images/contact-phone.png" width="32" height="32" alt="">
+                        <a class="contact-list__mobile-number" href="tel:79267159799">+7(926)715-97-99</a>
+                        <a class="contact-list__mobile-number" href="tel:74966420188">+7(496)642-01-88</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <img class="contact-list__item-icon" src="images/email.png" width="32" height="32" alt="">
+                        <a class="contact-list__email-text">vet-stupino@yandex.ru</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <img class="contact-list__item-icon" src="images/vkontakte.png" width="32" height="32" alt="">
+                        <a class="contact-list__vk-address" href="https://vk.com/zoodomik_stupino">Наша группа Вконтакте</a>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="contacts">
-            <p id="our-contacts" class="contacts-title">Контакты</p>
-            <div class="contacts-container">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af992d8ac42e48451c735cf96e94b37713267d38e02d6e5b2772a8395447f776f&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-                <div class="contacts-info">
-                    <div class="contact-item">
-                        <img class="contact-item-icon" src="img/home-address.png" alt="">
-                        <p class="contact-text">Московская область,<br>г. Ступино, ул. Горького, д. 33/25</p>
-                    </div>
-                    <div class="contact-item">
-                        <img class="contact-item-icon" src="img/work-syllabus.png" alt="">
-                        <p class="contact-text">Пн-Вс, 9:00-21:00</p>
-                    </div>
-                    <div class="contact-item">
-                        <img class="contact-item-icon" src="img/contact-phone.png" alt="">
-                        <div>
-                            <a class="phone-text" href="tel:79267159799">+7(926)715-97-99</a>
-                            <a class="phone-text" href="tel:74966420188">+7(496)642-01-88</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <img class="contact-item-icon" src="img/email.png" alt="">
-                        <a>vet-stupino@yandex.ru</a>
-                    </div>
-                    <div class="contact-item">
-                        <img class="contact-item-icon" src="img/vkontakte.png" alt="">
-                        <p>https://vk.com</p>
-                    </div>
-                </div>
+        <footer class="page-footer">
+            <div class="footer-logo">
+                <h1 class="site-logo__main-title">ЗООДОМИК</h1>
+                <p class="site-logo__sub-title">Ветеринарная клиника</p>
             </div>
-        </section>
-        <footer class="site-footer">
-            <div class="site-logo-container">
-                <div class="site-logo-title">
-                    <h1>ЗООДОМИК</h1>
-                    <p>Ветеринарная клиника</p>
-                </div>
-                <img class="site-logo-image" src="img/logo.svg" alt="Логотип сайта">
-            </div>
-            <p class="footer-all-rigths">© 2025 Все права защищены</p>
-            <div class="footer-navigation">
-                <a class="site-navigation__link" href="#our-services">Услуги</a>
-                <a class="site-navigation__link" href="#our-experts">Специалисты</a>
-                <a class="site-navigation__link" href="#our-contacts">Контакты</a>
-            </div>
+            <p class="page-footer__copyright">© 2025 Все права защищены</p>
+            <nav class="footer-page-navigation">
+                <a class="page-navigation__link" href="#our-services">Услуги</a>
+                <a class="page-navigation__link" href="#our-experts">Специалисты</a>
+                <a class="page-navigation__link" href="#our-contacts">Контакты</a>
+            </nav>
         </footer>
     </body>
 </html>
