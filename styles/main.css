@@ -174,10 +174,12 @@ body {
 .experts-list__item-image {
     object-fit: fill;
     border-radius: 10px 10px 0 0;
+
 }
 
 .experts-list__item-name {
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .more-link {
@@ -381,10 +383,42 @@ body {
     }
 
     .experts-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         margin-bottom: 25px;
         gap: 10px;
     }
+
+    .experts-list__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experts-list__item-image {
+        object-fit: fill;
+        width: 100%;
+        height: 200px;
+    }
+
+    .reasons-block {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .reasons-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 0 25px 0;
+    }
+
+    .contacts-block {
+        padding: 0 10px 10
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 25px;
+    }
+
 }
