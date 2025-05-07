@@ -50,7 +50,7 @@ body {
 }
 
 .site-logo__main-title {
-    color: #8f7449;
+    color: #755f3c;
     margin: 0;
     font-family: "Chocolate", sans-serif;
     font-size: 42px;
@@ -71,7 +71,7 @@ body {
 
 .page-navigation__link {
     font-weight: bold;
-    color: #8f7449;
+    color: #372d1c;
     text-decoration: none;
     padding: 25px;
 }
@@ -83,7 +83,7 @@ body {
 
 .page-header__mobile-number {
     text-decoration: none;
-    color: #8f7449;
+    color: #57472d;
     font-weight: bold;
 
 }
@@ -94,6 +94,7 @@ body {
     padding-left: 250px;
     padding-right: 250px;
     padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .hero-title-wrapper {
@@ -290,7 +291,6 @@ body {
 
 .page-footer {
     background-color: #b6834b;
-    /*background-image: linear-gradient(to top, #875748, #edd9c2);*/
     padding-left: 250px;
     padding-right: 250px;
     padding-bottom: 100px;
@@ -431,6 +431,10 @@ body {
     }
 
     .page-footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 25px;
         display: flex;
         flex-direction: column-reverse;
     }
