@@ -449,9 +449,9 @@ body {
         padding-bottom: 20px;
     }
 
-    .hero-block__title {
+    .hero-block__titl`e {
         margin: 0;
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .hero-block__sub-title {
@@ -538,15 +538,14 @@ body {
 
     .footer-page-navigation {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 10px;
+        justify-content: space-between;
+        gap: 5px;
     }
 
     .page-navigation__link {
         font-weight: bold;
         text-decoration: none;
-        padding: 20px;
+        padding: 5px;
     }
 
     .footer-page-navigation {
