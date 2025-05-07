@@ -415,10 +415,35 @@ body {
     }
 
     .contacts-block {
-        padding: 0 10px 10
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 25px;
+        padding: 0 10px 25px 10px;
+
     }
 
+    .contacts-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .page-footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer-page-navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .page-navigation__link {
+        font-weight: bold;
+        text-decoration: none;
+        padding: 20px;
+    }
 }
