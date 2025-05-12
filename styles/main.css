@@ -262,6 +262,12 @@ body {
     gap: 10px;
 }
 
+.mobiles-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .contact-list__item-icon {}
 
 .contact-list__address-text {}
@@ -451,11 +457,11 @@ body {
 
     .hero-block__title {
         margin: 0;
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .hero-block__sub-title {
-        font-size: 14px;
+        font-size: 16px;
         padding-bottom: 25px;
     }
 
