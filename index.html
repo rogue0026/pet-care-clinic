@@ -9,130 +9,64 @@
     </head>
     <body>
         <header class="page-header">
-                <div class="title-container">
-                    <h1 class="site-logo__main-title">ЗООДОМИК</h1>
-                    <p class="site-logo__sub-title">Ветеринарная клиника</p>
+            <div class="site-logo">
+                <h1 class="site-logo__title">ЗООДОМИК</h1>
+                <p class="site-logo__subtitle">Ветеринарная клиника</p>
+            </div>
+            <nav class="page-navigation">
+                <a class="page-navigation__link" href="#our-services">Услуги</a>
+                <a class="page-navigation__link" href="specialists.html">Специалисты</a>
+                <a class="page-navigation__link" href="#our-contacts">Контакты</a>
+            </nav>
+            <div class="page-header__contacts">
+                <div class="page-header__contacts-item">
+                    <img class="contact-list__item-icon" src="images/contact-phone.png" width="24" height="24" alt="">
+                    <a href="tel:79267159799" class="page-header__mobile-number">+7(926)715-97-99</a>
                 </div>
-                <nav class="page-navigation">
-                    <a class="page-navigation__link" href="#our-services">Услуги</a>
-                    <a class="page-navigation__link" href="#our-experts">Специалисты</a>
-                    <a class="page-navigation__link" href="#our-contacts">Контакты</a>
-                </nav>
-                <a href="tel:79267159799" class="page-header__mobile-number">+7(926)715-97-99</a>
+                <div class="page-header__contacts-item">
+                    <img class="contact-list__item-icon" src="images/work-syllabus.png" width="24" height="24" alt="">
+                    <p class="page-header__syllabus">Пн-Вс, 9:00-21:00</p>
+                </div>
+            </div>
         </header>
         <section class="hero-block">
-            <div class="hero-title-wrapper">
-                <p class="hero-block__title">Забота о вашем питомце — наша профессия и призвание</p>
-                <p class="hero-block__sub-title">Ветеринарная клиника «Зоодомик» — место, где животных любят, понимают и лечат с душой. Мы всегда рядом, когда ваш хвостатый друг нуждается в помощи.</p>
+            <p class="hero-block__title">Забота о вашем питомце — наша профессия и призвание</p>
+            <div class="hero-block__wrapper">
+                <p class="hero-block__description">Ветеринарная клиника "Зоодомик" — это место, где забота, профессионализм и любовь к животным объединяются ради здоровья ваших питомцев.
+                    В нашей клинике работают опытные ветеринары, которые искренне любят своё дело.
+                    Мы всегда рядом, чтобы помочь — в любой ситуации.</p>
+                <img class="hero-block__animals" src="images/hero-animals.png" width="500" height="300" alt="">
             </div>
-            <img class="hero-block__banner" src="images/hero-animals.png" width="500" height="300" alt="Милые животные">
         </section>
         <section class="services-block">
             <h2 id="our-services" class="section-title">Услуги</h2>
             <ul class="service-list">
                 <li class="service-list__element">
-                    <h3 class="service-list__element-title">Процедурный кабинет</h3>
-                    <p class="service-list__element-description">Инъекции, инфузии, санация швов, санация мочевого пузыря, стрижка когтей, стрижка колтунов, гигиенические процедуры</p>
-                </li>
-                <li class="service-list__element">
-                    <h3 class="service-list__element-title">Лабораторные анализы</h3>
-                    <p class="service-list__element-description">Диагностика и профилактика заболеваний животных</p>
-                </li>
-                <li class="service-list__element">
-                    <h3 class="service-list__element-title">УЗИ и рентген</h3>
-                    <p class="service-list__element-description">Визуальная диагностика внутренних органов пациента с использованием современного оборудования</p>
-                </li>
-                <li class="service-list__element">
-                    <h3 class="service-list__element-title">Чипирование</h3>
-                    <p class="service-list__element-description">Легкий в применении, безболезненный, надежный и безопасный метод идентификации животного на протяжении всей его жизни</p>
-                </li>
-                <li class="service-list__element">
-                    <h3 class="service-list__element-title">Кастрация и стерилизация</h3>
-                    <p class="service-list__element-description">Эффективный контроль репродуктивной функции</p>
+                    <h3 class="service-list__element-title">Терапия</h3>
+                    <p class="service-list__element-description">Первичный приём, инъекции, инфузии, санация швов, стрижка когтей</p>
                 </li>
                 <li class="service-list__element">
                     <h3 class="service-list__element-title">Вакцинация</h3>
                     <p class="service-list__element-description">Самое распространенное и эффективное средство профилактики инфекционных болезней животных</p>
                 </li>
-            </ul>
-        </section>
-        <section class="experts-block">
-            <h2 id="our-experts" class="section-title">Наши специалисты</h2>
-            <ul class="experts-list">
-                <li class="experts-list__item">
-                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
-                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Лабораторные анализы</h3>
+                    <p class="service-list__element-description">Сотрудничаем с аккредитованной лабораторией: «НЕОВЕТ»</p>
                 </li>
-                <li class="experts-list__item">
-                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
-                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Экспресс-диагностика бабезиоза собак (анализ на "клеща")</h3>
+                    <p class="service-list__element-description">Микроскопия мазка крови. Результат в течение часа после забора материала.</p>
                 </li>
-                <li class="experts-list__item">
-                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
-                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Экспресс-диагностика дерматомикозов и эктопаразитов</h3>
+                    <p class="service-list__element-description">Анализ на «лишай», саркоптоз, отодектоз и демодекоз. Микроскопия соскоба. Результат в течение дня после забора материала.</p>
                 </li>
-                <li class="experts-list__item">
-                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
-                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
-                </li>
-                <li class="experts-list__item">
-                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
-                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
-                </li>
-                <li class="experts-list__item">
-                    <img class="experts-list__item-image" src="images/vet-specialist.png" width="190" height="250" alt="">
-                    <p class="experts-list__item-name">Фамилия Имя Отчество</p>
+                <li class="service-list__element">
+                    <h3 class="service-list__element-title">Ветеринарная аптека и Зоомагазин</h3>
+                    <p class="service-list__element-description">Широкий выбор лекарств, лечебных кормов и средств по уходу за питомцем.</p>
                 </li>
             </ul>
-            <a class="more-link" href="./specialists.html">Узнать подробнее</a>
-        </section>
-        <section class="reasons-block">
-            <h2 class="section-title">Почему мы?</h2>
-            <ul class="reasons-list">
-                <li class="reasons-list__item">
-                    <div class="reasons-list__item-wrapper">
-                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
-                        <p class="reasons__item-title">Забота</p>
-                    </div>
-                    <p class="reasons__item-description">Мы внимательны к животным и к людям. Мы искренне хотим помочь и считаем, что лечение должно проходить без лишнего стресса.</p>
-                </li>
-                <li class="reasons-list__item">
-                    <div class="reasons-list__item-wrapper">
-                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
-                        <p class="reasons__item-title">Экстренная помощь</p>
-                    </div>
-                    <p class="reasons__item-description">Имеется все необходимое оборудование, а у врачей достаточно знаний для оказания экстренной помощи.</p>
-                </li>
-                <li class="reasons-list__item">
-                    <div class="reasons-list__item-wrapper">
-                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
-                        <p class="reasons__item-title">Профессионализм</p>
-                    </div>
-                    <p class="reasons__item-description">Мы уверены в каждом своем сотруднике. Наши специалисты увлечены своей профессией и постоянно совершенствуются.</p>
-                </li>
-                <li class="reasons-list__item">
-                    <div class="reasons-list__item-wrapper">
-                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
-                        <p class="reasons__item-title">Ответственность</p>
-                    </div>
-                    <p class="reasons__item-description">Мы принимаем взвешенные решения, учитывая потребности наших пациентов. Мы готовы к сложным ситуациям.</p>
-                </li>
-                <li class="reasons-list__item">
-                    <div class="reasons-list__item-wrapper">
-                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
-                        <p class="reasons__item-title">Индивидуальный подход</p>
-                    </div>
-                    <p class="reasons__item-description">Мы искренне переживаем за маленьких пациентов и беремся решать даже самые сложные случаи.</p>
-                </li>
-                <li class="reasons-list__item">
-                    <div class="reasons-list__item-wrapper">
-                        <img class="reasons-list__item-icon" src="images/cat-foot-icon.png" width="48" height="48" alt="">
-                        <p class="reasons__item-title">Зоомагазин</p>
-                    </div>
-                    <p class="reasons__item-description">Правильное питание - залог здоровья! Мы поможем подобрать питания для вашего питомца.</p>
-                </li>
-            </ul>
-        </section>
         <section class="contacts-block">
             <h2 id="our-contacts" class="section-title">Контакты</h2>
             <div class="contacts-wrapper">
@@ -165,13 +99,13 @@
             </div>
         </section>
         <footer class="page-footer">
-            <div class="footer-logo">
-                <h1 class="site-logo__main-title">ЗООДОМИК</h1>
-                <p class="site-logo__sub-title">Ветеринарная клиника</p>
+            <div class="site-logo">
+                <h1 class="site-logo__title">ЗООДОМИК</h1>
+                <p class="site-logo__subtitle">Ветеринарная клиника</p>
             </div>
-            <nav class="footer-page-navigation">
+            <nav class="page-navigation">
                 <a class="page-navigation__link" href="#our-services">Услуги</a>
-                <a class="page-navigation__link" href="#our-experts">Специалисты</a>
+                <a class="page-navigation__link" href="specialists.html">Специалисты</a>
                 <a class="page-navigation__link" href="#our-contacts">Контакты</a>
             </nav>
         </footer>
