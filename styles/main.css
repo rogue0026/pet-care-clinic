@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: #fbeec1;
+    background-color: rgb(255 249 237);
     margin: 0;
     font-family: "Evolventa", sans-serif;
     font-size: 16px;
@@ -42,7 +42,7 @@ li {
 }
 
 .page-header {
-    background-color: #8d8741;
+    background-color: #3f422e;
     padding-top: 20px;
     padding-bottom: 40px;
     margin-bottom: 40px;
@@ -61,7 +61,7 @@ li {
 }
 
 .site-logo__title {
-    color: #25221B;
+    color: #d78b30;
     margin: 0 0 5px 0;
     font-family: "Chocolate", sans-serif;
     font-size: 42px;
@@ -69,17 +69,19 @@ li {
 }
 
 .site-logo__subtitle {
+    color: rgb(255 249 237);
     margin: 0;
     font-size: 18px;
 }
 
 .page-navigation {
+    color: rgb(255, 249, 237);
     display: flex;
     justify-content: space-between;
 }
 
 .page-navigation__link {
-    color: #eae4d3;
+    color: inherit;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -91,7 +93,7 @@ li {
 }
 
 .page-header__contacts {
-    color: #39342a;
+    color: rgb(255, 249, 237);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -172,7 +174,9 @@ li {
 
 .service-list__element {
     background-color: rgba(141, 135, 65, 0.08);
-    border: 1px solid rgba(141, 135, 65, 0.28);
+    /*border: 2px solid rgba(141, 135, 65, 0.38);*/
+    border: 2px solid #726d3661;
+
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
@@ -221,7 +225,8 @@ li {
     gap: 8px;
 }
 
-.contact-list__item-icon {}
+.contact-list__item-icon {
+}
 
 .contact-list__address-text {
     color: inherit;
@@ -250,7 +255,7 @@ li {
 }
 
 .page-footer {
-    background-color: #8d8741;
+    background-color: #3f422e;
     padding-top: 25px;
     padding-bottom: 25px;
 }
