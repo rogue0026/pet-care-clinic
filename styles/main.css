@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    background-color: #fbeec1;
     margin: 0;
     font-family: "Evolventa", sans-serif;
     font-size: 16px;
@@ -29,21 +30,28 @@ li {
 }
 
 .container {
-    min-width: 1140px;
-    max-width: 1400px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 .section-title {
-    margin: 0;
+    color: #39342a;
+    font-size: 32px;
+    margin: 0 0 20px 0;
     padding: 0;
 }
 
 .page-header {
+    background-color: #8d8741;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 40px;
 }
 
 .site-logo {
@@ -53,7 +61,8 @@ li {
 }
 
 .site-logo__title {
-    margin: 0;
+    color: #25221B;
+    margin: 0 0 5px 0;
     font-family: "Chocolate", sans-serif;
     font-size: 42px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -70,13 +79,19 @@ li {
 }
 
 .page-navigation__link {
-    font-size: 18px;
+    color: #eae4d3;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     padding: 25px;
 }
 
+.page-navigation__link:hover {
+    text-decoration: underline;
+}
+
 .page-header__contacts {
+    color: #39342a;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -94,12 +109,14 @@ li {
 }
 
 .page-header__mobile-number {
+    color: inherit;
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .page-header__syllabus {
+    color: inherit;
     margin: 0;
     font-size: 18px;
     font-weight: bold;
@@ -110,22 +127,26 @@ li {
 }
 
 .hero-block__title {
+    /*color: #39342a;*/
+    color: #6b6730;
     margin: 0;
-    font-size: 42px;
+    padding-bottom: 50px;
+    font-size: 36px;
     font-weight: bold;
-    /*text-align: center;*/
+    text-align: center;
 }
 
 .hero-block__wrapper {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(2, 500px);*/
-    /*justify-content: center;*/
-    /*column-gap: 50px;*/
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    column-gap: 50px;
 }
 
 .hero-block__description {
+    color: #39342a;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     align-self: center;
 }
 
@@ -150,15 +171,27 @@ li {
 }
 
 .service-list__element {
+    background-color: rgba(141, 135, 65, 0.08);
+    border: 1px solid rgba(141, 135, 65, 0.28);
+    border-radius: 10px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    gap: 15px;
 }
 
 .service-list__element-title {
+    color: #6b6730;
+    text-align: center;
+    border-bottom: 1px solid rgba(141, 135, 65, 0.28);;
+    padding: 10px;
+    margin: 0;
 }
 
 .service-list__element-description {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    flex-grow: 1;
 }
 
 .contacts-block {
@@ -167,11 +200,13 @@ li {
 
 .contacts-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .contacts-list {
+    font-size: 18px;
+    color: #39342a;
     margin: 0;
     padding: 0;
     display: flex;
@@ -183,34 +218,45 @@ li {
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.mobiles-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 }
 
 .contact-list__item-icon {}
 
-.contact-list__address-text {}
+.contact-list__address-text {
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
 
-.contact-list__syllabus-text {}
+.contact-list__syllabus-text {
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
 
 .contact-list__mobile-number {
+    color: inherit;
     text-decoration: none;
 }
 
-.contact-list__email-text {}
+.contact-list__email-text {
+    color: inherit;
+}
 
 .contact-list__vk-address {
+    color: inherit;
     text-decoration: none;
 }
 
 .page-footer {
+    background-color: #8d8741;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 25px;
 }
