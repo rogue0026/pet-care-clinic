@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: rgb(255 249 237);
+    background-color: #fffaed;
     margin: 0;
     font-family: "Evolventa", sans-serif;
     font-size: 16px;
@@ -35,14 +35,14 @@ li {
 }
 
 .section-title {
-    color: #39342a;
+    color: #310e10;
     font-size: 32px;
     margin: 0 0 20px 0;
     padding: 0;
 }
 
 .page-header {
-    background-color: #3f422e;
+    background-color: #84E900;
     padding-top: 20px;
     padding-bottom: 40px;
     margin-bottom: 40px;
@@ -129,8 +129,7 @@ li {
 }
 
 .hero-block__title {
-    /*color: #39342a;*/
-    color: #6b6730;
+    color: #310e10;
     margin: 0;
     padding-bottom: 50px;
     font-size: 36px;
@@ -174,9 +173,7 @@ li {
 
 .service-list__element {
     background-color: rgba(141, 135, 65, 0.08);
-    /*border: 2px solid rgba(141, 135, 65, 0.38);*/
     border: 2px solid #726d3661;
-
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
@@ -184,7 +181,7 @@ li {
 }
 
 .service-list__element-title {
-    color: #6b6730;
+    color: #310e10;
     text-align: center;
     border-bottom: 1px solid rgba(141, 135, 65, 0.28);;
     padding: 10px;
@@ -255,7 +252,7 @@ li {
 }
 
 .page-footer {
-    background-color: #3f422e;
+    background-color: #84E900;
     padding-top: 25px;
     padding-bottom: 25px;
 }
