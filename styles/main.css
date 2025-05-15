@@ -28,15 +28,22 @@ li {
     padding: 0;
 }
 
+.container {
+    min-width: 1140px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .section-title {
     margin: 0;
-    padding: 0 0 20px 0;
+    padding: 0;
 }
 
 .page-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .site-logo {
@@ -53,6 +60,7 @@ li {
 }
 
 .site-logo__subtitle {
+    margin: 0;
     font-size: 18px;
 }
 
@@ -92,26 +100,27 @@ li {
 }
 
 .page-header__syllabus {
+    margin: 0;
     font-size: 18px;
     font-weight: bold;
 }
 
 .hero-block {
-
+    padding-bottom: 40px;
 }
 
 .hero-block__title {
     margin: 0;
     font-size: 42px;
     font-weight: bold;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .hero-block__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    justify-content: center;
-    column-gap: 50px;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 500px);*/
+    /*justify-content: center;*/
+    /*column-gap: 50px;*/
 }
 
 .hero-block__description {
@@ -121,15 +130,18 @@ li {
 }
 
 .hero-block__animals {
+    display: block;
     width: 500px;
     height: 300px;
 }
 
 .services-block {
-
+    padding-bottom: 40px;
 }
 
 .service-list {
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -150,6 +162,7 @@ li {
 }
 
 .contacts-block {
+    padding-bottom: 40px;
 }
 
 .contacts-wrapper {
@@ -159,6 +172,8 @@ li {
 }
 
 .contacts-list {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -197,4 +212,5 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 25px;
 }
