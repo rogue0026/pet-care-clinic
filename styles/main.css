@@ -292,6 +292,14 @@ li {
         margin-bottom: 20px;
     }
 
+    .page-navigation {
+        color: #2e2e2e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .header-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -311,7 +319,6 @@ li {
 
     .page-navigation {
         grid-area: navigation;
-        justify-content: space-around;
     }
 
     .page-header__contacts {
@@ -412,6 +419,6 @@ li {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
