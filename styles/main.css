@@ -276,9 +276,7 @@ li {
 
 @media (max-width: 768px) {
     .section-title {
-        font-size: 28px;
-        margin: 0 0 20px 0;
-        padding: 0;
+        text-align: center;
     }
 
     .container {
@@ -370,6 +368,10 @@ li {
 }
 
 @media (max-width: 480px) {
+    .section-title {
+        text-align: center;
+    }
+
     .header-wrapper {
         display: flex;
         flex-direction: column;
