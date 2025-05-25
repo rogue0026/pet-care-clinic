@@ -290,7 +290,6 @@ li {
     }
 
     .page-navigation {
-        color: #2e2e2e;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -410,7 +409,7 @@ li {
     .contacts-list {
         font-size: 18px;
         margin: 0;
-        padding: 0;
+        padding: 0 10px 0 10px;
         display: flex;
         flex-direction: column;
         gap: 25px;
