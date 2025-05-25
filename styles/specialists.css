@@ -48,6 +48,11 @@ body {
     justify-content: space-between;
 }
 
+.logo-wrapper {
+    display: block;
+    text-decoration: none;
+}
+
 .site-logo {
     display: flex;
     flex-direction: column;

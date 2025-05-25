@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="images/logo.svg">
+    <link rel="stylesheet" href="styles/resume.css">
     <title>Ветеринарный врач Черникова Светлана Викторовна</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="page-header">
         <div class="header-wrapper container">
-            <div class="site-logo">
-                <h1 class="site-logo__title">ЗООДОМИК</h1>
-                <p class="site-logo__subtitle">Ветеринарная клиника</p>
-            </div>
+            <a class="logo-wrapper" href="index.html">
+                <div class="site-logo">
+                    <h1 class="site-logo__title">ЗООДОМИК</h1>
+                    <p class="site-logo__subtitle">Ветеринарная клиника</p>
+                </div>
+            </a>
             <nav class="page-navigation">
-                <a class="page-navigation__link" href="#our-services">Услуги</a>
+                <a class="page-navigation__link" href="index.html#our-services">Услуги</a>
                 <a class="page-navigation__link" href="specialists.html">Специалисты</a>
-                <a class="page-navigation__link" href="#our-contacts">Контакты</a>
+                <a class="page-navigation__link" href="index.html#our-contacts">Контакты</a>
             </nav>
             <div class="page-header__contacts">
                 <div class="page-header__contacts-item">
@@ -30,48 +33,58 @@
             </div>
         </div>
     </header>
-    <section class="doctor-info-container container">
-        <h2 class="section-title">Черникова Светлана Викторовна</h2>
-        <div class="">
-            <p class="doctor-specialization">Врач-терапевт, специалист ультразвуковой диагностики</p>
-            <img class="doctor-photo" src="" alt="Черникова Светлана Викторовна">
+    <section class="doctor-resume container">
+        <h2 class="doctor-resume__name">Черникова Светлана Викторовна</h2>
+        <p class="doctor-resume__specialisation">Врач-терапевт, специалист ультразвуковой диагностики</p>
+        <img class="doctor-resume__photo" src="images/photo-stub.png" width="350" height="450" alt="Черникова Светлана Викторовна">
+        <div class="main-education-wrapper">
+            <p class="doctor-resume__title">Образование</p>
+            <ul class="doctor-resume__education-list education-list">
+                <li class="education-list__item">В 1994 году закончила обучение по специальности ветеринария, Богородицкий совхоз-колледж.</li>
+                <li class="education-list__item">В 2000 году закончила обучение на ветеринарном факультете Московской государственной академии ветеринарной медицины и биотехнологии им. К.И. Скрябина.</li>
+            </ul>
         </div>
-        <p>В 1994 году закончила обучение по специальности ветеринария, Богородицкий совхоз-колледж.</p>
-        <p>В 2000 году закончила обучение на ветеринарном факультете Московской государственной академии ветеринарной медицины и биотехнологии им. К.И. Скрябина.</p>
-        <p>Участник многих ветеринарных семинаров и конгрессов, курсов повышения квалификации, в том числе:</p>
-        <ul>
-            <li>2013 г. «Ультразвуковые исследования в ветеринарии»</li>
-            <li>2015 г. «Основы интенсивной терапии и анестезиологии»</li>
-            <li>2016 г. «Конференция по ветеринарной офтальмологии»</li>
-            <li>2017 г. «Сертификат специалиста в сфере обращения лекарственных средств и препаратов для ветеринарного применения»</li>
-            <li>2017 г. «Сердечно-легочная реанимация собак и кошек по гайдлайнам Recover-2012»</li>
-            <li>2018 г. «Основы интенсивной терапии»</li>
-            <li>2018 г. «Ультразвуковая диагностика мелких домашних животных. Вторая ступень</li>
-            <li>2019 г. «УЗИ мягких тканей. Базовый уровень»</li>
-            <li>2020 г. «УЗИ мягких тканей. Продвинутый уровень»</li>
-            <li>2021 г. «Офтальмология мелких домашних животных. Базовый уровень»</li>
-            <li>2021 г. «Ультразвуковая диагностика труднодоступных структур»</li>
-            <li>2024 г. «Маркировка. Опыт и практический пример ветеринарные клиники и аптеки»</li>
-            <li>2024 г. «Сертификат специалиста в сфере обращения лекарственных средств и препаратов для ветеринарного применения»</li>
-        </ul>
-        <p>Опыт работы:</p>
-        <ul>
-            <li>2000 - 2002 г. — ветеринарный врач ЗАО «Старая Ситня»</li>
-            <li>2002 – 2011 г. – частнопрактикующий ветеринарный врач</li>
-            <li>2011 – 2020 г. — главный ветеринарный врач, Ветзооцентр «Зоодомик»</li>
-            <li>2020 г. - по настоящее время — главный ветеринарный врач, Ветзооцентр «Зоодомик» и Ветзооцентр «Большой Пёс»</li>
-        </ul>
+        <div class="extra-education-wrapper">
+            <p class="doctor-resume__title">Дополнительное обучение</p>
+            <ul class="doctor-resume__skills-training-list skills-training-list">
+                <li class="skills-training-list__item">2013 г. «Ультразвуковые исследования в ветеринарии»</li>
+                <li class="skills-training-list__item">2015 г. «Основы интенсивной терапии и анестезиологии»</li>
+                <li class="skills-training-list__item">2016 г. «Конференция по ветеринарной офтальмологии»</li>
+                <li class="skills-training-list__item">2017 г. «Сертификат специалиста в сфере обращения лекарственных средств и препаратов для ветеринарного применения»</li>
+                <li class="skills-training-list__item">2017 г. «Сердечно-легочная реанимация собак и кошек по гайдлайнам Recover-2012»</li>
+                <li class="skills-training-list__item">2018 г. «Основы интенсивной терапии»</li>
+                <li class="skills-training-list__item">2018 г. «Ультразвуковая диагностика мелких домашних животных. Вторая ступень</li>
+                <li class="skills-training-list__item">2019 г. «УЗИ мягких тканей. Базовый уровень»</li>
+                <li class="skills-training-list__item">2020 г. «УЗИ мягких тканей. Продвинутый уровень»</li>
+                <li class="skills-training-list__item">2021 г. «Офтальмология мелких домашних животных. Базовый уровень»</li>
+                <li class="skills-training-list__item">2021 г. «Ультразвуковая диагностика труднодоступных структур»</li>
+                <li class="skills-training-list__item">2024 г. «Маркировка. Опыт и практический пример ветеринарные клиники и аптеки»</li>
+                <li class="skills-training-list__item">2024 г. «Сертификат специалиста в сфере обращения лекарственных средств и препаратов для ветеринарного применения»</li>
+            </ul>
+        </div>
+        <div class="experience-wrapper">
+            <p class="doctor-resume__title">Опыт работы</p>
+            <ul class="doctor-resume__work-experience-list work-experience-list">
+                <li class="work-experience-list__item">2000 - 2002 г. — ветеринарный врач ЗАО «Старая Ситня»</li>
+                <li class="work-experience-list__item">2002 – 2011 г. – частнопрактикующий ветеринарный врач</li>
+                <li class="work-experience-list__item">2011 – 2020 г. — главный ветеринарный врач, Ветзооцентр «Зоодомик»</li>
+                <li class="work-experience-list__item">2020 г. - по настоящее время — главный ветеринарный врач, Ветзооцентр «Зоодомик» и Ветзооцентр «Большой Пёс»</li>
+            </ul>
+        </div>
+<!--        <a class="back-to-doctors-list" href="#s">Назад</a>-->
     </section>
     <footer class="page-footer">
         <div class="footer-wrapper container">
-            <div class="site-logo">
-                <h1 class="site-logo__title">ЗООДОМИК</h1>
-                <p class="site-logo__subtitle">Ветеринарная клиника</p>
-            </div>
+            <a class="logo-wrapper" href="index.html">
+                <div class="site-logo">
+                    <h1 class="site-logo__title">ЗООДОМИК</h1>
+                    <p class="site-logo__subtitle">Ветеринарная клиника</p>
+                </div>
+            </a>
             <nav class="page-navigation">
-                <a class="page-navigation__link" href="#our-services">Услуги</a>
+                <a class="page-navigation__link" href="index.html#our-services">Услуги</a>
                 <a class="page-navigation__link" href="specialists.html">Специалисты</a>
-                <a class="page-navigation__link" href="#our-contacts">Контакты</a>
+                <a class="page-navigation__link" href="index.html#our-contacts">Контакты</a>
             </nav>
         </div>
     </footer>

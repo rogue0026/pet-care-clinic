@@ -17,7 +17,7 @@ body {
     background-color: #F1F7EE;
     margin: 0;
     font-family: "Evolventa", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .container {
@@ -42,6 +42,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: block;
+    text-decoration: none;
 }
 
 .site-logo {
@@ -117,6 +122,123 @@ body {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
+}
+
+.doctor-resume {
+    display: grid;
+    grid-template-areas:
+    "doctor-photo doctor-fio doctor-fio doctor-fio"
+    "doctor-photo position position position"
+    "education professional-development professional-development professional-development"
+    "experience professional-development professional-development professional-development"
+    "experience professional-development professional-development professional-development";
+    row-gap: 40px;
+    column-gap: 40px;
+    padding-bottom: 50px;
+}
+
+
+.doctor-resume__name{
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    grid-area: doctor-fio;
+    align-self: center;
+}
+
+.doctor-resume__specialisation {
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    grid-area: position;
+    align-self: center;
+}
+
+.doctor-resume__photo {
+    display: block;
+    grid-area: doctor-photo;
+    border-radius: 10px;
+}
+
+.main-education-wrapper {
+    grid-area: education;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.experience-wrapper {
+    grid-area: experience;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.doctor-resume__title {
+    margin: 0;
+    padding: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.doctor-resume__education-list {
+}
+
+.education-list {
+    margin: 0;
+    padding: 15px;
+}
+
+.education-list__item {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.extra-education-wrapper {
+    grid-area: professional-development;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.doctor-achievements {
+    margin: 0;
+    padding: 0;
+}
+
+.skills-training-list {
+    margin: 0;
+    padding: 15px;
+}
+
+.skills-training-list__item {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.work-experience-list {
+    margin: 0;
+    padding: 15px;
+}
+
+.work-experience-list__item {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.back-to-doctors-list {
+    display: block;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #B33951;
+    padding: 15px;
+    text-align: center;
 }
 
 .page-footer {
