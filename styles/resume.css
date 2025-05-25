@@ -174,12 +174,18 @@ body {
     border-radius: 10px;
 }
 
+.doctor-resume__title-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    gap: 10px;
+}
+
 .doctor-resume__title {
     margin: 0;
-    padding: 15px;
     font-size: 26px;
     font-weight: bold;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .doctor-resume__education-list {
@@ -298,6 +304,7 @@ body {
     .doctor-resume {
         display: flex;
         flex-direction: column;
+
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -327,6 +334,14 @@ body {
     .page-navigation {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .doctor-resume__name {
+        text-align: center;
+    }
+
+    .doctor-resume__specialisation {
+        text-align: center;
     }
 
     .footer-wrapper {
