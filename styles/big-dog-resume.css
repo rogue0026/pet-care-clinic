@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "Evolventa";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Evolventa/Evolventa-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Chocolate";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Chocolate/chocolatecyr_lat.otf") format("opentype");
+}
+
+body {
+    color: #2e2e2e;
+    background-color: #FFFFFF;
+    margin: 0;
+    font-family: "Evolventa", sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.page-header {
+    background-color: #9681d9;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: block;
+    text-decoration: none;
+}
+
+.site-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-logo__title {
+    color: #FFFFFF;
+    margin: 0 0 5px 0;
+    font-family: "Chocolate", sans-serif;
+    font-size: 42px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-logo__subtitle {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 18px;
+}
+
+.page-navigation {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation__link {
+    color: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 25px;
+}
+
+.page-navigation__link:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: ease-in-out 0.3s;
+}
+
+.page-header__contacts {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.page-header__contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-header__contacts-icon {
+
+}
+
+.page-header__mobile-number {
+    color: inherit;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-header__syllabus {
+    color: inherit;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.doctor-resume {
+    display: grid;
+    grid-template-areas:
+    "doctor-photo doctor-fio doctor-fio doctor-fio"
+    "doctor-photo position position position"
+    "education professional-development professional-development professional-development"
+    "experience professional-development professional-development professional-development"
+    "experience professional-development professional-development professional-development";
+    row-gap: 40px;
+    column-gap: 40px;
+    padding-bottom: 50px;
+}
+
+
+.doctor-resume__name{
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    grid-area: doctor-fio;
+    align-self: center;
+}
+
+.doctor-resume__specialisation {
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    grid-area: position;
+    align-self: center;
+}
+
+.doctor-resume__photo {
+    display: block;
+    grid-area: doctor-photo;
+    border-radius: 10px;
+}
+
+.main-education-wrapper {
+    grid-area: education;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.experience-wrapper {
+    grid-area: experience;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.doctor-resume__title-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    gap: 10px;
+}
+
+.doctor-resume__title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.doctor-resume__education-list {
+}
+
+.education-list {
+    margin: 0;
+    padding: 15px;
+}
+
+.education-list__item {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.extra-education-wrapper {
+    grid-area: professional-development;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.doctor-achievements {
+    margin: 0;
+    padding: 0;
+}
+
+.skills-training-list {
+    margin: 0;
+    padding: 15px;
+}
+
+.skills-training-list__item {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.work-experience-list {
+    margin: 0;
+    padding: 15px;
+}
+
+.work-experience-list__item {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.back-to-doctors-list {
+    display: block;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #B33951;
+    padding: 15px;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #9681d9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .page-navigation {
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "site-logo contacts"
+        "navigation navigation";
+    }
+
+    .site-logo {
+        grid-area: site-logo;
+    }
+
+    .page-navigation {
+        grid-area: navigation;
+    }
+
+    .page-header__contacts {
+        grid-area: contacts;
+        justify-self: center;
+    }
+
+    .doctor-resume {
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .doctor-resume__name {
+        font-size: 30px;
+    }
+
+    .doctor-resume__specialisation {
+        font-size: 22px;
+    }
+
+    .doctor-resume__photo {
+        width: 300px;
+        height: 400px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-navigation {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .doctor-resume__name {
+        text-align: center;
+    }
+
+    .doctor-resume__specialisation {
+        text-align: center;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

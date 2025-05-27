@@ -1,3 +1,11 @@
 .test-container {
     display: flex;
+    gap: 100px;
+}
+
+.test-container__link {
+    font-family: "OpenSymbol", sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
 }

@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "Evolventa";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Evolventa/Evolventa-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Chocolate";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Chocolate/chocolatecyr_lat.otf") format("opentype");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #2e2e2e;
+    background-color: #ffffff;
+    margin: 0;
+    font-family: "Evolventa", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.page-header {
+    background-color: #9681d9;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: block;
+    text-decoration: none;
+}
+
+.site-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-logo__title {
+    color: #ffffff;
+    margin: 0 0 5px 0;
+    font-family: "Chocolate", sans-serif;
+    font-size: 42px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-logo__subtitle {
+    color: #ffffff;
+    margin: 0;
+    font-size: 18px;
+}
+
+.page-navigation {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation__link {
+    color: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 25px;
+}
+
+.page-navigation__link--current {
+    text-decoration: underline;
+}
+
+.page-navigation__link:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: ease-in-out 0.3s;
+}
+
+
+.page-header__contacts {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.page-header__contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-header__contacts-icon {
+
+}
+
+.page-header__mobile-number {
+    color: inherit;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-header__syllabus {
+    color: inherit;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.doctors__list {
+    padding: 0 0 40px 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    column-gap: 40px;
+    row-gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.doctors__list-item {
+
+    list-style-type: none;
+}
+
+.doctors__link {
+    text-decoration: none;
+    color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.doctors__link:hover .doctors__doctor-photo {
+    transition: transform ease-in-out 0.3s;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+    0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+.doctors__link:hover .doctors__doctor-name {
+    transition: transform ease-in-out 0.3s;
+    transform: scale(1.03);
+}
+
+.doctors__doctor-photo {
+    border-radius: 10px;
+}
+
+.doctors__doctor-name {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #9681d9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .page-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "site-logo contacts"
+        "navigation navigation";
+    }
+
+    .site-logo {
+        grid-area: site-logo;
+    }
+
+    .page-navigation {
+        grid-area: navigation;
+    }
+
+    .page-header__contacts {
+        grid-area: contacts;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-navigation {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
