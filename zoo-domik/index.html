@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../styles/zoodomik.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/main.js" defer></script>
     </head>
     <body>
         <header class="page-header">
@@ -39,6 +40,7 @@
                     <p class="hero-block__description">Ветеринарная клиника "Зоодомик" — это место, где забота, профессионализм и любовь к животным объединяются ради здоровья ваших питомцев.
                         В нашей клинике работают опытные ветеринары, которые искренне любят своё дело.
                         Мы всегда рядом, чтобы помочь — в любой ситуации.</p>
+                    <button class="enlist-button" type="button">Записаться на прием</button>
                 </div>
             </div>
         </section>
@@ -135,5 +137,30 @@
                 </nav>
             </div>
         </footer>
+        <div class="modal">
+            <div class="modal-enlist">
+                <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть</span>Закрыть</button>
+                <section class="modal-enlist__content">
+                    <h2 class="modal-enlist__title">Записаться на прием</h2>
+                    <p class="modal-enlist__subtitle">Заполните данные в форме ниже и наш администратор свяжется с Вами в ближайшее время</p>
+                    <form class="enlist-form">
+                        <input class="enlist-form__input" type="text" placeholder="Ваше имя"/>
+                        <input class="enlist-form__input" type="tel" placeholder="Телефон"/>
+                        <input class="enlist-form__input" type="email" placeholder="Email"/>
+                        <select class="enlist-form__input">
+                            <option>Тип услуги</option>
+                            <option>Терапия</option>
+                            <option>Вакцинация</option>
+                            <option>Лабораторные анализы</option>
+                            <option>Экспресс-диагностика бабезиоза собак</option>
+                            <option>Экспресс-диагностика дерматомикозов и эктопаразитов</option>
+                        </select>
+                        <textarea class="enlist-form__text-area" placeholder="Сообщение"></textarea>
+                    </form>
+                    <p class="enlist-form__persona-approval">Нажимая кнопку отправить, Вы подтверждаете свое <a class="enlist-form__link" href="#">согласие на обработку персональных данных</a></p>
+                    <button class="enlist-form__send-button" type="submit">Отправить</button>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
