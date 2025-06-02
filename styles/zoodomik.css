@@ -172,6 +172,19 @@ li {
     align-self: center;
 }
 
+.enlist-button {
+    grid-area: enlist-button;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
 .hero-block__animals {
     grid-area: hero-banner;
     display: block;
@@ -318,9 +331,18 @@ li {
 .modal-close-button {
     cursor: pointer;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    padding: 0;
+    top: 0;
+    right: 0;
     border: none;
+}
+
+.close-icon {
+    display: block;
+}
+
+.close-icon:hover {
+    fill: rgba(0, 0, 0, 0.1);
 }
 
 .modal-enlist__content {
@@ -545,14 +567,3 @@ li {
     }
 }
 
-.enlist-button {
-    grid-area: enlist-button;
-    justify-self: center;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #2e2e2e;
-    color: white;
-    font-size: 20px;
-    padding: 5px 20px 5px 20px;
-}
