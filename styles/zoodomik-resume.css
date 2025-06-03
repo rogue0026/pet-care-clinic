@@ -155,9 +155,10 @@ body {
 }
 
 .doctor-resume__photo {
+    object-fit: contain;
     display: block;
     grid-area: doctor-photo;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .main-education-wrapper {
