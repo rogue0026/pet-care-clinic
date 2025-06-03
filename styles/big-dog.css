@@ -140,18 +140,35 @@ li {
 
 .hero-block__wrapper {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-areas:
+    "hero-banner hero-description"
+    "hero-banner enlist-button";
     justify-content: center;
     column-gap: 50px;
 }
 
 .hero-block__description {
+    grid-area: hero-description;
     margin: 0;
     font-size: 20px;
     align-self: center;
 }
 
+.enlist-button {
+    grid-area: enlist-button;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
 .hero-block__animals {
+    grid-area: hero-banner;
     display: block;
     width: 500px;
     height: 300px;
@@ -272,6 +289,112 @@ li {
     justify-content: space-between;
 }
 
+.modal {
+    display: none;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-enlist {
+    background-color: #ffffff;
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    width: 25%;
+
+}
+
+.modal-close-button {
+    cursor: pointer;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    border: none;
+}
+
+.close-icon {
+    display: block;
+}
+
+.close-icon:hover {
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+.modal-enlist__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal-enlist__title {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.modal-enlist__subtitle {
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+
+.enlist-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.enlist-form__input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.enlist-form__text-area {
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    height: 150px;
+    resize: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.enlist-form__persona-approval {
+
+}
+
+.enlist-form__link {
+    color: #a1a1c1;
+    text-decoration: none;
+}
+
+.enlist-form__send-button {
+    color: white;
+    font-size: 18px;
+    align-self: flex-start;
+    padding: 15px;
+    border: none;
+    background-color: black;
+}
+
+.enlist-form__send-button:hover {
+    background-color: #2e2e2e;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
 @media (max-width: 768px) {
     .section-title {
         text-align: center;
@@ -364,6 +487,10 @@ li {
         column-gap: 25px;
     }
 
+    .modal-enlist {
+        width: 70%;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -421,5 +548,10 @@ li {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .modal-enlist {
+        width: 100%;
+        height: 100%;
     }
 }

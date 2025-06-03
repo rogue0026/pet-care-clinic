@@ -142,7 +142,6 @@ body {
 }
 
 .doctors__list-item {
-
     list-style-type: none;
 }
 
@@ -169,7 +168,7 @@ body {
 
 .doctors__doctor-photo {
     width: 300px;
-    height: 400px;
+    height: 450px;
     object-fit: cover;
     border-radius: 10px;
 }

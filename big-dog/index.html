@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/big-dog.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/modal-enlist.js" defer></script>
 </head>
 <body>
 <header class="page-header">
@@ -37,6 +38,7 @@
         <div class="hero-block__wrapper">
             <img class="hero-block__animals" src="../images/hero-animals.png" width="500" height="300" alt="">
             <p class="hero-block__description">«Большой Пёс» — современная ветеринарная клиника, где забота о животных стоит на первом месте. Мы лечим с любовью и профессионализмом, помогая питомцам жить долгой и здоровой жизнью.</p>
+            <button class="enlist-button" type="button">Записаться на прием</button>
         </div>
     </div>
 </section>
@@ -155,5 +157,36 @@
         </nav>
     </div>
 </footer>
+<div class="modal">
+    <div class="modal-enlist">
+        <button class="modal-close-button" type="button">
+            <svg class="close-icon" width="32px" height="32px" viewBox="0 0 24 24" fill="#F1F7EE" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32"/>
+                <path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <section class="modal-enlist__content">
+            <h2 class="modal-enlist__title">Записаться на прием</h2>
+            <p class="modal-enlist__subtitle">Заполните данные в форме ниже и наш администратор свяжется с Вами в ближайшее время</p>
+            <form class="enlist-form">
+                <input class="enlist-form__input" type="text" placeholder="Ваше имя"/>
+                <input class="enlist-form__input" type="tel" placeholder="Телефон"/>
+                <input class="enlist-form__input" type="email" placeholder="Email"/>
+                <select class="enlist-form__input">
+                    <option>Тип услуги</option>
+                    <option>Терапия</option>
+                    <option>Вакцинация</option>
+                    <option>Лабораторные анализы</option>
+                    <option>Экспресс-диагностика бабезиоза собак</option>
+                    <option>Экспресс-диагностика дерматомикозов и эктопаразитов</option>
+                </select>
+                <textarea class="enlist-form__text-area" placeholder="Сообщение"></textarea>
+            </form>
+            <p class="enlist-form__persona-approval">Нажимая кнопку отправить, Вы подтверждаете свое <a class="enlist-form__link" href="#">согласие на обработку персональных данных</a></p>
+            <button class="enlist-form__send-button" type="submit">Отправить</button>
+        </section>
+    </div>
+</div>
 </body>
 </html>

@@ -159,8 +159,6 @@ li {
     grid-template-areas:
     "hero-banner hero-description"
     "hero-banner enlist-button";
-    grid-template-columns: 500px 1fr;
-
     justify-content: center;
     column-gap: 50px;
 }
