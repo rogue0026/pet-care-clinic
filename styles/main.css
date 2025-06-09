@@ -1,11 +1,75 @@
-.test-container {
-    display: flex;
-    gap: 100px;
+@font-face {
+    font-family: "Evolventa";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Evolventa/Evolventa-Regular.ttf") format("truetype");
 }
 
-.test-container__link {
-    font-family: "OpenSymbol", sans-serif;
+@font-face {
+    font-family: "Chocolate";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Chocolate/chocolatecyr_lat.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    font-family: "Evolventa", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "left right";
+    column-gap: 40px;
+}
+
+.page-title {
+    font-size: 42px;
+    margin: 0;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    grid-area: title;
+}
+
+.zoodomik-card {
+    text-decoration: none;
     color: black;
-    font-size: 30px;
-    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    grid-area: left;
+    gap: 15px;
+}
+
+.card__title {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.card__address {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.card__photo {
+    border-radius: 10px;
+    display: block;
+}
+
+.big-dog-card {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    grid-area: right;
+    gap: 15px;
 }
