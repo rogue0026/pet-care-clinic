@@ -73,3 +73,41 @@ body {
     grid-area: right;
     gap: 15px;
 }
+
+@media (max-width: 1199px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zoodomik-card {
+        align-items: center;
+        padding: 0 25px 0 25px;
+    }
+
+    .big-dog-card {
+        align-items: center;
+        padding: 0 25px 0 25px;
+    }
+}
+
+@media (max-width: 460px) {
+    .page-title {
+        font-size: 28px;
+        padding: 25px 0 25px 0;
+    }
+
+    .card__title {
+        font-size: 24px;
+    }
+
+    .card__address {
+        font-size: 16px;
+    }
+
+    .card__photo {
+        width: 400px;
+        height: 250px;
+    }
+}
