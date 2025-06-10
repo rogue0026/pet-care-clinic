@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/modal-enlist.js" defer></script>
+    <script src="../js/form.js" defer></script>
 </head>
 <body>
 <header class="page-header">
@@ -176,20 +177,20 @@
             <h2 class="modal-enlist__title">Записаться на прием<br>в Ветзооцентр Большой Пёс</h2>
             <p class="modal-enlist__subtitle">Заполните данные в форме ниже и наш администратор свяжется с Вами в ближайшее время</p>
             <form class="enlist-form">
-                <input id="input-fio" class="enlist-form__input" type="text" placeholder="Фамилия Имя Отчество"/>
-                <input id="input-phone" class="enlist-form__input" type="tel" placeholder="Телефон"/>
+                <input id="input-fio" class="enlist-form__input" type="text" placeholder="Фамилия Имя Отчество" required/>
+                <input id="input-phone" class="enlist-form__input" type="tel" placeholder="Телефон" required/>
                 <input id="input-email" class="enlist-form__input" type="email" placeholder="Email"/>
                 <select id="input-service-type" class="enlist-form__input">
-                    <option>Тип услуги</option>
+                    <option></option>
                     <option>Кардиология</option>
                     <option>Узи</option>
                     <option>Хирургия</option>
                     <option>Прием главного врача</option>
                 </select>
                 <textarea id="input-extra-message" class="enlist-form__text-area" placeholder="Сообщение"></textarea>
+                <p class="enlist-form__persona-approval">Нажимая кнопку отправить, Вы подтверждаете свое <a class="enlist-form__link" href="#">согласие на обработку персональных данных</a></p>
+                <button class="enlist-form__send-button" type="submit">Отправить</button>
             </form>
-            <p class="enlist-form__persona-approval">Нажимая кнопку отправить, Вы подтверждаете свое <a class="enlist-form__link" href="#">согласие на обработку персональных данных</a></p>
-            <button class="enlist-form__send-button" type="submit">Отправить</button>
         </section>
     </div>
 </div>
