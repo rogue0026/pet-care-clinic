@@ -45,3 +45,39 @@ sendButton.addEventListener('click', evt => {
             console.error('Ошибка при выполении запроса:', error);
         })
 })
+
+const phoneField =  document.getElementById('input-phone');
+
+phoneField.addEventListener('input', () => {
+    const regExp = /^\d{6,}$/;
+    if (regExp.test(phoneField.value)) {
+        phoneField.classList.add('valid');
+        phoneField.classList.remove('invalid');
+    } else {
+        phoneField.classList.add('invalid');
+        phoneField.classList.remove('valid');
+    }
+})
+
+const emailField = document.getElementById('input-email');
+
+emailField.addEventListener('input', () => {
+    const regExp = /^$|^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/;
+    if (regExp.test(emailField.value)) {
+        emailField.classList.add('valid');
+        emailField.classList.remove('invalid');
+    } else {
+        emailField.classList.add('invalid');
+        emailField.classList.remove('valid');
+    }
+})
+
+const modalCloseButton = document.getElementById('form-close-button')
+
+modalCloseButton.addEventListener('click', () => {
+    emailField.classList.remove('valid');
+    emailField.classList.remove('invalid');
+    phoneField.classList.remove('valid');
+    phoneField.classList.remove('invalid');
+    document.querySelector('.enlist-form').reset();
+})

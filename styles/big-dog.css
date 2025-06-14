@@ -384,6 +384,7 @@ li {
     padding: 10px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
 }
 
 .enlist-form__text-area {
@@ -393,6 +394,7 @@ li {
     max-height: 150px;
     resize: none;
     border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
 }
 
 .enlist-form__persona-approval {
@@ -410,6 +412,14 @@ li {
 .send-request-error {
     color: red;
     font-size: 14px;
+}
+
+.valid {
+    border: 2px solid rgba(97,255,6,0.77);
+}
+
+.invalid {
+    border: 2px solid red;
 }
 
 .enlist-form__link {
