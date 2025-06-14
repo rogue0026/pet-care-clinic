@@ -372,7 +372,7 @@ li {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .enlist-form__input {
@@ -389,7 +389,7 @@ li {
     outline: none;
     font-size: 14px;
     padding: 10px;
-    height: 150px;
+    max-height: 150px;
     resize: none;
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
