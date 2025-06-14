@@ -332,6 +332,7 @@ li {
     margin: auto;
     padding: 30px;
     width: 25%;
+    overflow: auto;
 }
 
 .modal-close-button {
@@ -587,7 +588,7 @@ li {
     }
 
     .modal-enlist {
-        width: 90vw;
-        height: 90vh;
+        width: 100vw;
+        height: 100vh;
     }
 }
