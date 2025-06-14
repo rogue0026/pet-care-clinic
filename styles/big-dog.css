@@ -396,7 +396,20 @@ li {
 }
 
 .enlist-form__persona-approval {
+}
 
+.invisible {
+    display: none;
+}
+
+.send-request-ok {
+    color: green;
+    font-size: 14px;
+}
+
+.send-request-error {
+    color: red;
+    font-size: 14px;
 }
 
 .enlist-form__link {

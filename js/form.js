@@ -1,5 +1,7 @@
 const sendButton = document.querySelector('.enlist-form__send-button');
 sendButton.addEventListener('click', evt => {
+    evt.preventDefault();
+
     const URL = 'http://localhost:8080/enlist';
 
     let fio = document.getElementById('input-fio');
@@ -33,9 +35,13 @@ sendButton.addEventListener('click', evt => {
             return response.json();
         })
         .then(result => {
+            let okResponseText = document.querySelector('.send-request-ok');
+            okResponseText.classList.remove('invisible');
             console.log('Ответ сервера:', result);
         })
         .catch(error => {
+            let errResponseText = document.querySelector('.send-request-error');
+            errResponseText.classList.remove('invisible')
             console.error('Ошибка при выполении запроса:', error);
         })
 })
