@@ -13,6 +13,7 @@
 }
 
 body {
+    background-color: aliceblue;
     margin: 0;
     font-family: "Evolventa", sans-serif;
     font-size: 16px;
@@ -20,7 +21,7 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 .wrapper {
@@ -63,6 +64,24 @@ body {
 .card__photo {
     border-radius: 10px;
     display: block;
+}
+
+.go-to-website-link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3e3e3e;
+    color: white;
+    padding: 15px;
+    align-self: center;
+}
+
+.go-to-website-link:hover {
+    color: white;
+    background-color: black;
+    transition: all ease-in-out 0.2s;
 }
 
 .big-dog-card {

@@ -2,7 +2,7 @@ const sendButton = document.querySelector('.enlist-form__send-button');
 sendButton.addEventListener('click', evt => {
     evt.preventDefault();
 
-    const URL = 'http://localhost:8080/enlist';
+    const URL = 'http://localhost:9090/api/enlist';
 
     let fio = document.getElementById('input-fio');
     let phone = document.getElementById('input-phone');
