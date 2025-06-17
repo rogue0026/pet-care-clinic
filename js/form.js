@@ -2,12 +2,16 @@ const sendButton = document.querySelector('.enlist-form__send-button');
 sendButton.addEventListener('click', evt => {
     evt.preventDefault();
 
-    const URL = 'http://77.222.55.173/api/enlist';
-
+    const URL = 'http://vet-stupino.ru/api/enlist';
     let okResponseText = document.querySelector('.send-request-ok');
-    okResponseText.classList.add('invisible');
+    if (!okResponseText.classList.contains('invisible')) {
+        okResponseText.classList.add('invisible');
+    }
+
     let errResponseText = document.querySelector('.send-request-error');
-    errResponseText.classList.add('invisible')
+    if (!errResponseText.classList.contains('invisible')) {
+        errResponseText.classList.add('invisible')
+    }
 
     let fio = document.getElementById('input-fio');
     let phone = document.getElementById('input-phone');
