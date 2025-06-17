@@ -398,6 +398,8 @@ li {
 }
 
 .enlist-form__persona-approval {
+    padding: 0;
+    margin: 0 0 5px 0;
 }
 
 .invisible {
@@ -405,11 +407,15 @@ li {
 }
 
 .send-request-ok {
+    padding: 0;
+    margin: 0;
     color: green;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .send-request-error {
+    padding: 0;
+    margin: 0;
     color: red;
     font-size: 14px;
 }
