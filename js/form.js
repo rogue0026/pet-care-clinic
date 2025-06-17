@@ -4,6 +4,11 @@ sendButton.addEventListener('click', evt => {
 
     const URL = 'http://77.222.55.173/api/enlist';
 
+    let okResponseText = document.querySelector('.send-request-ok');
+    okResponseText.classList.add('invisible');
+    let errResponseText = document.querySelector('.send-request-error');
+    errResponseText.classList.add('invisible')
+
     let fio = document.getElementById('input-fio');
     let phone = document.getElementById('input-phone');
     let email = document.getElementById('input-email');
