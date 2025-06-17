@@ -2,7 +2,7 @@ const sendButton = document.querySelector('.enlist-form__send-button');
 sendButton.addEventListener('click', evt => {
     evt.preventDefault();
 
-    const URL = 'http://localhost:9090/api/enlist';
+    const URL = 'http://77.222.55.173/api/enlist';
 
     let fio = document.getElementById('input-fio');
     let phone = document.getElementById('input-phone');
@@ -79,5 +79,11 @@ modalCloseButton.addEventListener('click', () => {
     emailField.classList.remove('invalid');
     phoneField.classList.remove('valid');
     phoneField.classList.remove('invalid');
+
+    let okResponseText = document.querySelector('.send-request-ok');
+    let errResponseText = document.querySelector('.send-request-error');
+    okResponseText.classList.add('invisible');
+    errResponseText.classList.add('invisible');
+
     document.querySelector('.enlist-form').reset();
 })
