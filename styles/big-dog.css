@@ -435,9 +435,9 @@ li {
 
 .enlist-form__send-button {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     align-self: flex-start;
-    padding: 15px;
+    padding: 10px;
     border: none;
     background-color: black;
 }
