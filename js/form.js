@@ -2,7 +2,7 @@ const sendButton = document.querySelector('.enlist-form__send-button');
 sendButton.addEventListener('click', evt => {
     evt.preventDefault();
 
-    const URL = 'http://vet-stupino.ru/api/enlist';
+    const URL = 'https://vet-stupino.ru/api/enlist';
     let okResponseText = document.querySelector('.send-request-ok');
     if (!okResponseText.classList.contains('invisible')) {
         okResponseText.classList.add('invisible');
