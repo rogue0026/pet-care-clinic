@@ -29,6 +29,10 @@ sendButton.addEventListener('click', evt => {
 
     const enlistForm = document.querySelector('.enlist-form')
     enlistForm.reset()
+    phoneField.classList.remove('valid');
+    phoneField.classList.remove('invalid');
+    emailField.classList.remove('valid');
+    emailField.classList.remove('invalid');
 
     fetch(URL, {
         method: 'POST',
