@@ -1,6 +1,20 @@
-const sendButton = document.querySelector('.enlist-form__send-button');
 const URL = 'https://vet-stupino.ru/api/enlist';
 
+function validatePhone(phoneValue) {
+    const regExp = /^\d{6,}$/;
+    return regExp.test(phoneValue);
+}
+
+function validateEmail(emailValue) {
+    const regExp = /^$|^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/;
+    return regExp.test(emailValue)
+}
+
+function validateServiceType(serviceTypeValue) {
+    return serviceTypeValue !== 'Тип услуги';
+}
+
+const sendButton = document.querySelector('.enlist-form__send-button');
 sendButton.addEventListener('click', evt => {
     evt.preventDefault();
 
@@ -10,16 +24,38 @@ sendButton.addEventListener('click', evt => {
     let serviceType = document.querySelector('#input-service-type');
     let extraMessage = document.querySelector('#input-extra-message');
 
-    console.log(serviceType.value)
-    if (serviceType.value === 'Тип услуги') {
-        serviceType.classList.add('invalid')
-        return
-    } else {
-        if (serviceType.classList.contains('invalid')) {
-            serviceType.classList.remove('invalid')
-        }
+
+    let fioNotEmpty = (fio.value !== '')
+    let phoneIsValid = validatePhone(phone.value)
+    let emailIsValid = validateEmail(email.value)
+    let serviceTypeIsValid = validateServiceType(serviceType.value)
+
+    let allFieldsAreValid = fioNotEmpty && phoneIsValid && emailIsValid && serviceTypeIsValid
+
+    if (!fioNotEmpty) {
+        fio.classList.add('invalid')
     }
 
+    if (!phoneIsValid) {
+        phone.classList.add('invalid')
+    }
+    if (!emailIsValid) {
+        email.classList.add('invalid')
+    }
+    if (!serviceTypeIsValid) {
+        serviceType.classList.add('invalid')
+    }
+
+    if (!allFieldsAreValid) {
+        return
+    }
+
+    const enlistForm = document.querySelector('.enlist-form')
+    enlistForm.reset()
+    const formFields = [fio, phone, email, serviceType, extraMessage]
+    for (let i = 0; i < formFields.length; i++) {
+        formFields[i].classList.remove('valid', 'invalid')
+    }
     const requestBody = {
         fio: fio.value,
         phone: phone.value,
@@ -27,12 +63,6 @@ sendButton.addEventListener('click', evt => {
         service_type: serviceType.value,
         extra_message: extraMessage.value
     };
-
-    const enlistForm = document.querySelector('.enlist-form')
-    enlistForm.reset()
-    phoneField.classList.remove('valid', 'invalid');
-    emailField.classList.remove('valid', 'invalid');
-    serviceType.classList.remove('invalid')
 
     sendDataToServer(requestBody)
         .catch(error => {
@@ -59,3 +89,4 @@ async function sendDataToServer(requestBody) {
         okResponseText.classList.remove('invisible');
     }
 }
+
