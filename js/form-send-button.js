@@ -10,6 +10,7 @@ sendButton.addEventListener('click', evt => {
     let serviceType = document.querySelector('#input-service-type');
     let extraMessage = document.querySelector('#input-extra-message');
 
+    console.log(serviceType.value)
     if (serviceType.value === 'Тип услуги') {
         serviceType.classList.add('invalid')
         return
@@ -31,6 +32,7 @@ sendButton.addEventListener('click', evt => {
     enlistForm.reset()
     phoneField.classList.remove('valid', 'invalid');
     emailField.classList.remove('valid', 'invalid');
+    serviceType.classList.remove('invalid')
 
     sendDataToServer(requestBody)
         .catch(error => {
