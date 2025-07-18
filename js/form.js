@@ -23,3 +23,17 @@ emailField.addEventListener('input', () => {
         emailField.classList.remove('valid');
     }
 })
+
+const serviceTypeField = document.querySelector('#input-service-type')
+serviceTypeField.addEventListener('change', (evt) => {
+    if (serviceTypeField.value === 'Тип услуги' && !serviceTypeField.classList.contains('invalid')) {
+        serviceTypeField.classList.add('invalid');
+        return
+    }
+    if (serviceTypeField.value !== 'Тип услуги') {
+        if (serviceTypeField.classList.contains('invalid')) {
+            serviceTypeField.classList.remove('invalid');
+        }
+        serviceTypeField.classList.add('valid');
+    }
+})

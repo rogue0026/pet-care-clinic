@@ -7,7 +7,7 @@ modalCloseButton.addEventListener('click', () => {
     let serviceTypeField = document.querySelector('#input-service-type');
     emailField.classList.remove('valid', 'invalid');
     phoneField.classList.remove('valid', 'invalid');
-    serviceTypeField.classList.remove('invalid');
+    serviceTypeField.classList.remove('valid', 'invalid');
 
 
     let okResponseText = document.querySelector('.send-request-ok');
