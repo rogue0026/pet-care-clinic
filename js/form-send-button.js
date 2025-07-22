@@ -64,6 +64,12 @@ sendButton.addEventListener('click', evt => {
         extra_message: extraMessage.value
     };
 
+    console.log(`fio: ${fio.value}`)
+    console.log(`phone: ${phone.value}`)
+    console.log(`email: ${email.value}`)
+    console.log(`service type: ${serviceType.value}`)
+    console.log(`extra message: ${extraMessage.value}`)
+
     sendDataToServer(requestBody)
         .catch(error => {
                 let errResponseText = document.querySelector('.send-request-error');
